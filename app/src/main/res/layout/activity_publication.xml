@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_insta"
+    tools:context="com.ayaz.instamart.activities.PublicationActivity">
+
+    <com.ayaz.instamart.marttool.View.ImageViewSquare
+        android:id="@+id/productImagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:paddingTop="0dp"
+        android:layout_above="@+id/explanation_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/publication_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:background="@color/instamart_take_photo"
+        android:text="@string/publish"
+        android:textAlignment="center"
+        android:textColor="@color/Sign_up_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/price_text"
+        android:layout_toEndOf="@+id/price_text"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp" />
+
+    <EditText
+        android:id="@+id/explanation_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/publication_button"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/explanation"
+        android:textColor="@color/Sign_up_button"
+        android:textColorHint="@color/Sign_up_button"
+        android:inputType="textMultiLine"
+        android:layout_alignLeft="@+id/again_take_button"
+        android:layout_alignStart="@+id/again_take_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/price_text"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="200"
+        android:hint="@string/price"
+        android:textColor="@color/Sign_up_button"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/Sign_up_button"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/publication_button"
+        android:layout_alignBottom="@+id/publication_button"
+        android:layout_toLeftOf="@+id/uploading_progress_bar"
+        android:layout_toStartOf="@+id/uploading_progress_bar" />
+
+    <ProgressBar
+        android:id="@+id/uploading_progress_bar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

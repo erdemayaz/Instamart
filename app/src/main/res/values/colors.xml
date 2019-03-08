@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6bc1c1</color>
+    <color name="colorPrimaryDark">#6bc1c1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="signup_button_instamart">#fafafa</color>
+    <color name="Sign_up_button">#b9d7efed</color>
+    <color name="sign_up_button">#a5f1ea</color>
+    <color name="instamart_take_photo">#aa6bc1c1</color>
+    <color name="black_insta">#091212</color>
+    <color name="pure_white">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
